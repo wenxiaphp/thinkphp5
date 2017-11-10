@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        模板 {$title}页
+    </title>
+    <link rel="stylesheet" href="__CSS__/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- 头部 -->
+        <div class="header">
+            {include file='common/nav' /}
+        </div>
+        <!-- 中部 -->
+        <div class="main">
+            <!-- 边栏 -->
+            <div class="sidebar">
+                sidebar
+            </div>
+            <!-- 内容 block不能使用相同的name名 -->
+            <div class="body">
+                {__CONTENT__}
+            </div>
+        </div>
+        <!-- 尾部 -->
+        <div class="footer">
+            footer
+        </div>
+    </div>
+</body>
+</html>
